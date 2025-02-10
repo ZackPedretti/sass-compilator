@@ -79,6 +79,3 @@ Les fonctionnalités implémentées sont :
 - La fonction nth() prenant en paramètre une liste et un entier i renvoyant la valeur i de la liste est implémentée.
 - Les fonctions darken() et lighten() prenant en paramètre une variable de couleur et un pourcentage i renvoyant la couleur i% plus sombre / plus clair sont implémentées (Utilisent color-mix, fonction présente dans les versions plus récentes de CSS)
 - La fonction linear-gradient() est implémentée
-
-### Commentaire sur le TP
-J'ai beaucoup aimé travailler sur ce TP. J'ai trouvé que les outils étaient intuitifs et intéressants, et c'est pour cela que j'ai mis beaucoup d'efforts pour compléter ce compilateur.
