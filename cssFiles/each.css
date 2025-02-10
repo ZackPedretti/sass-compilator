@@ -1,0 +1,51 @@
+.text-red{	
+	color: red;
+}
+.text-green{	
+	color: green;
+}
+.text-blue{	
+	color: blue;
+}
+.text-yellow{	
+	color: yellow;
+}
+
+.font-small{	
+	font-size: 12px;
+}
+.font-large{	
+	font-size: 20px;
+}
+.font-medium{	
+	font-size: 16px;
+}
+
+.margin-5px{	
+	margin: 5px;
+}
+.margin-10px{	
+	margin: 10px;
+}
+.margin-15px{	
+	margin: 15px;
+}
+.margin-20px{	
+	margin: 20px;
+}
+
+.bg-gray-#{#f9f9f9-name}{	
+	background-color: #f9f9f9;
+}
+.bg-gray-#{#e0e0e0-name}{	
+	background-color: #e0e0e0;
+}
+.bg-gray-#{#bdbdbd-name}{	
+	background-color: #bdbdbd;
+}
+.bg-gray-#{#757575-name}{	
+	background-color: #757575;
+}
+.bg-gray-#{#212121-name}{	
+	background-color: #212121;
+}

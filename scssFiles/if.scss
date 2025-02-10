@@ -1,0 +1,84 @@
+// Define variables for demonstration
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$border-radius: 5px;
+$large-screen: true;
+$button-size: large;
+$dark-theme: true;
+
+// Using @if without nesting
+.button {
+  background-color: $primary-color;
+  padding: 10px 20px;
+  border: none;
+
+  // Simple @if condition
+  @if $large-screen {
+    font-size: 18px;
+  }
+
+  // Using @else if
+  @if $button-size ==small {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  @else if $button-size ==medium {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  @else if $button-size ==large {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+
+  // Using @else for a fallback
+  @if $border-radius >0 {
+    border-radius: $border-radius;
+  }
+
+  @else {
+    border-radius: 0;
+  }
+
+  // Using @if with logical operators (and)
+  @if $large-screen and $dark-theme {
+    background-color: darken($primary-color, 20%);
+    color: white;
+  }
+
+  // Using @if with logical operators (or)
+  @if $dark-theme or $large-screen {
+    border: 1px solid $secondary-color;
+  }
+
+  // Using @if with negation
+  @if not $dark-theme {
+    background-color: $primary-color;
+  }
+}
+
+// A second button with different values
+$button-size: small;
+
+.button-secondary {
+  background-color: $secondary-color;
+  padding: 10px 20px;
+  border: none;
+
+  @if $button-size ==small {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  @else if $button-size ==medium {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  @else {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}

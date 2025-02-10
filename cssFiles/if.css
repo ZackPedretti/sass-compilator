@@ -1,0 +1,29 @@
+:root{
+	--primary-color: #3498db;
+        --border-radius: 5px;
+        --secondary-color: #2ecc71;
+        --large-screen: true;
+        --button-size: small;
+        --dark-theme: true;
+}
+
+.button{	
+	background-color: var(--primary-color);	
+	padding: 10px 20px ;	
+	border: none;		
+	font-size: 18px;		
+	padding: 15px 30px ;	
+	font-size: 20px;		
+	border-radius: var(--border-radius);		
+	background-color: color-mix(in srgb, black 20%, #3498db) /* color-mix est une fonction présente dans des versions récentes de CSS */;	
+	color: white;		
+	border: 1px solid var(--secondary-color) ;	
+}
+
+.button-secondary{	
+	background-color: var(--secondary-color);	
+	padding: 10px 20px ;	
+	border: none;		
+	padding: 5px 10px ;	
+	font-size: 12px;
+}

@@ -1,0 +1,41 @@
+// Using @each with a list of colors
+$colors: red, green, blue, yellow;
+
+@each $color in $colors {
+  .text-#{$color} {
+    color: $color;
+  }
+}
+
+// Using @each with a map of sizes (capturing both keys and values)
+$sizes: (
+        small: 12px,
+        medium: 16px,
+        large: 20px
+);
+
+@each $size-name, $size-value in $sizes {
+  .font-#{$size-name} {
+    font-size: $size-value;
+  }
+}
+
+// Using @each with a list of spacings
+$spacings: 5px, 10px, 15px, 20px;
+
+@each $spacing in $spacings {
+  .margin-#{$spacing} {
+    margin: $spacing;
+  }
+}
+
+// Using @each with a list of gray shades
+$gray-shades: #f9f9f9, #e0e0e0, #bdbdbd, #757575, #212121;
+
+@each $shade in $gray-shades {
+  $shade-name: str-slice(#{$shade}, 2);
+
+  .bg-gray-#{$shade-name} {
+    background-color: $shade;
+  }
+}

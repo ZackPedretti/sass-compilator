@@ -1,0 +1,36 @@
+// Using @for with 'from ... through'
+@for $i from 1 through 5 {
+  .margin-#{$i} {
+    margin: $i * 5px;
+  }
+}
+
+// Using @for with 'from ... to' (non-inclusive)
+@for $i from 1 to 5 {
+  .padding-#{$i} {
+    padding: $i * 10px;
+  }
+}
+
+// Dynamic loop with variables
+$font-sizes: 10px, 12px, 14px, 16px, 18px;
+
+@for $i from 1 through length($font-sizes) {
+  .font-size-#{$i} {
+    font-size: nth($font-sizes, $i);
+  }
+}
+
+// Using @for to generate classes with different opacity levels
+@for $i from 1 through 10 {
+  .opacity-#{$i} {
+    opacity: $i * 0.1;
+  }
+}
+
+// @for for responsive columns with percentage widths
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: calc(100% / 12) * $i;
+  }
+}

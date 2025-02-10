@@ -1,0 +1,38 @@
+:root{
+	--padding: 10px;
+        --base-height: 50px;
+        --multiplier: 2;
+        --base-width: 100px;
+        --dark-color: #333333;
+        --light-color: #eeeeee;
+}
+
+.container{	
+	width: 200.0px;	
+	height: 70.0px;	
+	padding: 5.0px;	
+	margin: 45.0px;
+}
+
+.button{	
+	background-color: var(--dark-color);	
+	border-color: var(--light-color);
+}
+
+.card{	
+	width: 140.0px;	
+	height: 75.0px;	
+	margin: 65.0px;	
+	padding: 30.0px;
+}
+
+.text{	
+	font-size: 20.0px;	
+	line-height: 3.0;	
+	letter-spacing: 1.0px;
+}
+
+	.responsive-box{	
+	width: 125.0px;	
+	height: 90.0px;
+}

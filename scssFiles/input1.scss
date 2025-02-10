@@ -1,0 +1,33 @@
+$primary-color: #333;
+$margin: 10px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+button {
+  color: $primary-color;
+  @include border-radius(5px);
+
+  @if $primary-color ==#333 {
+    background-color: white;
+  }
+
+  @else {
+    background-color: black;
+  }
+
+  @for $i from 1 through 3 {
+    .item-#{$i} {
+      width: 100% / 3;
+    }
+  }
+}
+
+@each $i in a, b, c {
+  .#{$i}-class {
+    background: $primary-color;
+  }
+}
